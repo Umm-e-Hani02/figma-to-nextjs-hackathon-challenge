@@ -159,6 +159,3 @@ export default function CategoryHero() {
 
   );
 }
-
-
-// justify-around mt-7 xl:mx-16 lg:mx-7 flex-col gap-5 lg:gap-10
