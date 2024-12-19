@@ -26,16 +26,17 @@ export default function Dashboard() {
         <Rental />
         <Transaction/>
         </div>
-        <div className="md:w-[734px] h-11 flex items-center mt-28 md:mt-[950px] xl:mt-[75px] m-auto ml-12">
-          <button className="w-[156px] h-11 bg-[#3563E9] text-white rounded md:ml-72 lg:ml-96 xl:ml-[600px] hover:bg-[#3159d1] m-auto">
+      </div>
+        <div className="md:w-[734px] h-11 flex items-center mb-7 m-auto ml-12 text-nowrap">
+          <button className="w-[156px] h-11 bg-[#3563E9] text-white rounded md:ml-72 lg:ml-[500px] hover:bg-[#3159d1] m-auto lg:px-2 xl:ml-[700px]">
             Show More Car
           </button>
-          <p className="text-[#90A3BF] xl:ml-auto xl:-pr-[500px] xl:-mr-[500px] mr-7 cursor-context-menu hover:text-[#78a3a3]">
+          <p className="text-[#90A3BF]  mr-7 md:mr-32 lg:ml-60 cursor-context-menu hover:text-[#78a3a3] xl:ml-96">
             120 Car
           </p>
         </div>
-      </div>
       
     </section>
   );
 }
+
