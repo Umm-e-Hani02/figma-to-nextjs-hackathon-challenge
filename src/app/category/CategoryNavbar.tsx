@@ -1,6 +1,6 @@
 export default function CategoryNavbar() {
     return (
-      <nav className="w-[360px] lg:w-[260px] xl:w-[360px] h-[2000px] bg-[#FFFFFF] px-6 hidden lg:flex lg:flex-col">
+      <nav className="w-[360px] lg:w-[260px] xl:w-[360px] h-[1590px] bg-[#FFFFFF] px-6 hidden lg:flex lg:flex-col">
         <div>
           {/* Type */}
   
