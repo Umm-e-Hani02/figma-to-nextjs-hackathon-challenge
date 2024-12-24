@@ -4,7 +4,7 @@ import Hero from "./Hero";
 import Catalogue from "./Catalogue";
 export default function HomePage() {
   return (
-    <section className="max-w-[1440px] w-full h-[2900px] md:h-[3900px] lg:h-[3600px] xl:h-[2350px] bg-[#F6F7F9]">
+    <section className="max-w-[1440px]  h-[2900px] md:h-[3900px] lg:h-[3600px] xl:h-[2350px] bg-[#F6F7F9]">
       {/* TopBar */}
       <TopBar heading="High Fidelity Dashboard - Home Car Rent" />
 
