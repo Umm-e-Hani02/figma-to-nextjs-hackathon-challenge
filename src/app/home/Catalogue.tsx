@@ -15,8 +15,8 @@ export default function Catalogue() {
       {/* Popular Cars */}
       <div className="h-[452px] lg:flex flex-col bg-[#F6F7F9] mt-9 px-10">
         <div className="flex justify-between">
-          <h3 className="text-[#90A3BF] p-5">Popular Car</h3>
-          <h3 className="text-[#3563E9] p-5 cursor-pointer hover:text-[#2950c5]">View All</h3>
+          <h3 className="text-[#90A3BF] p-5 lg:ml-24 xl:ml-0">Popular Car</h3>
+          <h3 className="text-[#3563E9] p-5 cursor-pointer hover:text-[#2950c5] lg:mr-24 xl:mr-0">View All</h3>
         </div>
         <div className="h-[388px] md:grid md:grid-cols-2 md:gap-x-32 md:m-auto xl:grid-cols-4 xl:gap-x-10 hidden">
           <div className="md:mb-5">
@@ -77,7 +77,7 @@ export default function Catalogue() {
             />
           </div>
         </div>
-        
+        {/* Carousel for mobile */}
           <Carousel className="w-full max-w-[400px] md:hidden m-auto relative px-4">
             <CarouselContent>
               {[
@@ -128,9 +128,9 @@ export default function Catalogue() {
       </div>
 
       {/* Recommended Cars */}
-      <div className="h-[1280px] md:h-[872px] flex flex-col bg-[#F6F7F9] mt-9 px-10 md:mt-[450px] xl:mt-9">
+      <div className="h-[1280px] md:h-[872px] flex flex-col bg-[#F6F7F9] -mt-16 px-10 md:mt-[450px] xl:mt-9">
         <div className="flex justify-between">
-          <h3 className="text-[#90A3BF] p-5">Recommended Car</h3>
+          <h3 className="text-[#90A3BF] p-5 lg:ml-24 xl:ml-0">Recommended Car</h3>
         </div>
         <div className="h-[388px] grid-cols-1 gap-x-10 hidden md:grid md:grid-cols-2 md:gap-x-32 md:m-auto xl:grid-cols-4 xl:gap-x-10">
           <div className="md:mb-5">
@@ -245,7 +245,7 @@ export default function Catalogue() {
         </div>
 
         {/* Responsive Catalogue Cards for Mobile */}
-        <div className="h-[1380px] md:hidden m-auto">
+        <div className="h-[1380px] md:hidden">
           <div className="grid grid-cols-1 gap-y-5">
             <ResponsiveCatalogueCard
               carName="All New Rush"
