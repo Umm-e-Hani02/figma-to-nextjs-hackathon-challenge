@@ -24,7 +24,7 @@ export default function Hero() {
 
       <div className="lg:flex-row flex justify-around mt-7 xl:mx-16 lg:mx-7 flex-col gap-5 lg:gap-10">
         {/* Pick up */}
-        <div className="w-[385px] md:w-[560px] lg:w-[600px] h-[132px] bg-[#FFFFFF] rounded-lg px-6 m-auto">
+        <div className="w-[285px] md:w-[560px] lg:w-[600px] h-[132px] bg-[#FFFFFF] rounded-lg px-6 m-auto">
           <div className="flex pt-2">
             <input type="radio" name="select" />
             <label className="font-semibold ml-3">Pick-Up</label>
@@ -32,11 +32,11 @@ export default function Hero() {
           <div className="flex mt-4 m-auto justify-center items-center ">
 
             <div className="w-1/3">
-              <legend className="text-[#1A202C] font-semibold">
+              <legend className="text-[#1A202C] font-semibold text-sm md:text-base pl-3">
                 Locations
               </legend>
               <Select>
-                <SelectTrigger className="text-[#90A3BF] mt-2 focus:outline-none border-none lg:-ml-3 -ml-7">
+                <SelectTrigger className="text-[#90A3BF] mt-2 focus:outline-none border-none">
                   <SelectValue placeholder="Select your city" />
                 </SelectTrigger>
                 <SelectContent>
@@ -56,9 +56,9 @@ export default function Hero() {
 
             {/* Date */}
             <div className="w-1/3">
-              <legend className="text-[#1A202C] font-semibold">Date</legend>
+              <legend className="text-[#1A202C] font-semibold text-sm md:text-base pl-3">Date</legend>
               <Select>
-                <SelectTrigger className="text-[#90A3BF] mt-2 focus:outline-none border-none lg:-ml-3 -ml-7">
+                <SelectTrigger className="text-[#90A3BF] mt-2 focus:outline-none border-none">
                   <SelectValue placeholder="Select your date" />
                 </SelectTrigger>
                 <SelectContent>
@@ -77,9 +77,9 @@ export default function Hero() {
 
             {/* Time */}
             <div className="w-1/3">
-              <legend className="text-[#1A202C] font-semibold">Time</legend>
+              <legend className="text-[#1A202C] font-semibold text-sm md:text-base pl-3">Time</legend>
               <Select>
-                <SelectTrigger className="text-[#90A3BF] mt-2 focus:outline-none border-none lg:-ml-3 -ml-7">
+                <SelectTrigger className="text-[#90A3BF] mt-2 focus:outline-none border-none">
                   <SelectValue placeholder="Select your time" />
                 </SelectTrigger>
                 <SelectContent>
@@ -99,18 +99,18 @@ export default function Hero() {
         </div>
 
         {/* Drop off */}
-        <div className="w-[385px] md:w-[560px] lg:w-[600px] h-[132px] bg-[#FFFFFF] rounded-lg px-6 m-auto">
+        <div className="w-[295px] md:w-[560px] lg:w-[600px] h-[132px] bg-[#FFFFFF] rounded-lg px-6 m-auto">
           <div className="flex pt-2">
             <input type="radio" name="select" />
             <label className="font-semibold ml-3">Drop-Off</label>
           </div>
           <div className="flex mt-4 m-auto justify-center items-center">
             <div className="w-1/3">
-              <legend className="text-[#1A202C] font-semibold">
+              <legend className="text-[#1A202C] font-semibold text-sm md:text-base pl-3">
                 Locations
               </legend>
               <Select>
-                <SelectTrigger className="text-[#90A3BF] mt-2 focus:outline-none border-none lg:-ml-3 -ml-7">
+                <SelectTrigger className="text-[#90A3BF] mt-2 focus:outline-none border-none">
                   <SelectValue placeholder="Select your city" />
                 </SelectTrigger>
                 <SelectContent>
@@ -130,9 +130,9 @@ export default function Hero() {
 
             {/* Date */}
             <div className="w-1/3">
-              <legend className="text-[#1A202C] font-semibold">Date</legend>
+              <legend className="text-[#1A202C] font-semibold text-sm md:text-base pl-3">Date</legend>
               <Select>
-                <SelectTrigger className="text-[#90A3BF] mt-2 focus:outline-none border-none lg:-ml-3 -ml-7">
+                <SelectTrigger className="text-[#90A3BF] mt-2 focus:outline-none border-none">
                   <SelectValue placeholder="Select your date" />
                 </SelectTrigger>
                 <SelectContent>
@@ -151,9 +151,9 @@ export default function Hero() {
 
             {/* Time */}
             <div className="w-1/3">
-              <legend className="text-[#1A202C] font-semibold">Time</legend>
+              <legend className="text-[#1A202C] font-semibold text-sm md:text-base pl-3">Time</legend>
               <Select>
-                <SelectTrigger className="text-[#90A3BF] mt-2 focus:outline-none border-none lg:-ml-3 -ml-7">
+                <SelectTrigger className="text-[#90A3BF] mt-2 focus:outline-none border-none">
                   <SelectValue placeholder="Select your time" />
                 </SelectTrigger>
                 <SelectContent>
