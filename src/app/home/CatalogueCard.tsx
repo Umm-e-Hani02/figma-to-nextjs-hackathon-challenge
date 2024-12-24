@@ -22,8 +22,9 @@ const CatalogueCard = ({
   actualPrice?: string;
 }) => {
   return (
-    <div className="w-[304px] h-[410px] rounded-md flex flex-col bg-[#FFFFFF] p-5">
-      <div className="flex justify-between">
+    <div className=" md:w-[304px] h-[300px] md:h-[410px] rounded-md flex flex-col bg-[#FFFFFF] p-5 mx-auto">
+      {/* Header Section */}
+      <div className="flex justify-between items-start">
         <div className="flex flex-col">
           <h2 className="text-[#1A202C] font-bold text-xl flex flex-col">
             {carName}
@@ -31,37 +32,54 @@ const CatalogueCard = ({
           </h2>
         </div>
         <div>
-          <img src={like} alt="" />
+          <img src={like} alt="Like icon" className="w-5 h-5 sm:w-6 sm:h-6" />
         </div>
       </div>
-      <div className="my-16">
-        <img src={carImgSrc} alt={carImgAlt} />
+
+      {/* Image Section */}
+      <div className="my-8 sm:my-16 flex justify-center">
+        <img
+          src={carImgSrc}
+          alt={carImgAlt}
+          className="max-h-40 sm:max-h-64 object-contain"
+        />
       </div>
-      <div className="flex gap-4 mb-5">
-        <p className="text-[#90A3BF] flex">
-          <img src="carcard/gas-station.png" alt="" />
+
+      {/* Features Section */}
+      <div className="flex gap-x-1 text-nowrap md:gap-4 mb-5 justify-center sm:justify-start">
+        <p className="text-[#90A3BF] flex items-center md:gap-2 text-xs sm:text-sm">
+          <img
+            src="carcard/gas-station.png"
+            alt="Gasoline Icon"
+            className="w-4 h-4"
+          />
           {gasoline}
         </p>
-        <p className="text-[#90A3BF] flex">
-          <img src="carcard/manual.png" alt="" />
+        <p className="text-[#90A3BF] flex items-center md:gap-2 text-xs sm:text-sm">
+          <img src="carcard/manual.png" alt="Car Icon" className="w-4 h-4" />
           {car}
         </p>
-        <p className="text-[#90A3BF] flex">
-          <img src="carcard/people.png" alt="" />
+        <p className="text-[#90A3BF] flex items-center md:gap-2 text-xs sm:text-sm">
+          <img
+            src="carcard/people.png"
+            alt="Capacity Icon"
+            className="w-4 h-4"
+          />
           {capacity}
         </p>
       </div>
-      <div className="flex justify-between items-center mb-4">
+
+      <div className="flex md:justify-between items-center mb-4 gap-x-1">
         <div className="flex flex-col">
           <div>
-            <p className="text-[#1A202C] font-bold text-2xl">
+            <p className="text-[#1A202C] font-bold text-xl md:text-2xl">
               {price}
-              <span className="text-sm text-[#90A3BF] font-medium">day</span>
+              <span className="text-xs md:text-sm text-[#90A3BF] font-medium">day</span>
             </p>
             <del className="text-sm text-[#90A3BF]">{actualPrice}</del>
           </div>
         </div>
-        <button className="bg-[#3563E9] w-[116px] h-11 rounded-md text-center text-white hover:bg-[#3159d1]">
+        <button className="bg-[#3563E9] text-xs md:text-base w-[116px] h-9 md:h-11 rounded-md text-center text-white hover:bg-[#3159d1]">
           Rent Now
         </button>
       </div>
@@ -70,3 +88,4 @@ const CatalogueCard = ({
 };
 
 export default CatalogueCard;
+
