@@ -22,7 +22,7 @@ const ResponsiveCatalogueCard = ({
     actualPrice?: string;
   }) => {
     return (
-      <div className="w-[327px] h-[240px] bg-white rounded-lg shadow-lg p-5 flex flex-col">
+      <div className="w-[280px] h-[240px] bg-white rounded-lg shadow-lg p-5 flex flex-col -ml-5">
         {/* Header Section */}
         <div className="flex justify-between items-center mb-3">
           <div>
