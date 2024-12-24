@@ -88,4 +88,3 @@ const CatalogueCard = ({
 };
 
 export default CatalogueCard;
-
